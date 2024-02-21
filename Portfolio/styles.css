@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #5e0404;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    width: 325px;
+    margin-right: 65px;
+    align-items: center;
+}
+
+.right a {
+    color: white;
+    font-size: 18px;
+}
+
+
+
+
+
+#welcome-section {
+    height: 100vh;
+    background-color: #232325;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+#projects {
+    background-color: #075050;
+    color: rgb(246, 243, 243);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#projects h1 {
+    padding-top: 20px;
+}
+
+
+
+.tiles {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    
+}
+
+.tiles div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    transition: 150ms;
+}
+
+.tiles .project-tile:hover {
+    transform: translateY(-15px);
+}
+
+.text {
+    height: 40px;
+    background-color: #232325;
+
+}
+
+
+
+#projects div img {
+    width: 300px;
+}
+
+
+
+
+#contact {
+    height: 100vh;
+    background-color: #232325;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 30px;
+}
+
+#contact h1 {
+    font-size: 35px;
+}
+
+.bx {
+    font-size: 32px;
+    transition: 300ms;
+}
+
+.bx:hover {
+    color: #5e0404;
+}
+
+
+@media  screen and (max-width: 636px) {
+    .tiles {
+        flex-direction: column;
+    }
+
+    #projects {
+        height: 150vh;
+        justify-content: space-evenly;
+    }
+
+    .project-tile {
+        background-color: transparent;
+    }
+
+    .tiles div {
+        margin-top: 5px;
+    }
+
+    .right a {
+        font-size: 12px;
+    }
+
+    .right {
+        align-items: center;
+        justify-content: flex-end;
+        gap: 40px;
+        margin-right: 25px;
+    }
+
+    #contact h1, {
+        font-size: 12px;
+    }
+
+    #contact h1 {
+        font-size: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 523px) {
+    #welcome-section h1 {
+        font-size: 32px;
+    }
+}
